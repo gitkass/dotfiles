@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  default:
+    summary: Lists all available tasks in this Taskfile.
+    cmds:
+      - task --list
+    silent: true
+
+  check:
+    summary: Echoes a placeholder TODO message.
+    cmds:
+      - echo "TODO"
