@@ -27,6 +27,7 @@
               go-task  # https://taskfile.dev/
               git
               goreleaser
+              bash
             ];
 
           };
