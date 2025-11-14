@@ -6,49 +6,25 @@ This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/refere
 > Quickstart
 
 ```
+curl -fsSL https://tailscale.com/install.sh | sh
+curl -sSf -L https://install.lix.systems/lix | sh -s -- install
+curl -sfL https://direnv.net/install.sh | bash
 
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply gitkass
 ```
 
-
----
-
+```
+chezmoi --interactive init gitkass
+```
 
 ---
 
 TODO
 
 - [ ] todo Add delight to the experience when all tasks are complete :tada:
-- [ ] todo Add delight to the experience when all tasks are complete :tada:
-- [ ] todo Add delight to the experience when all tasks are complete :tada:
 
 
----
-
-
-https://www.chezmoi.io/reference/commands/init/
-todo
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-
-
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
-
-> [!TIP]
-> Helpful advice for doing things better or more easily.
-
-
----
-
-This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/reference/commands/init/).
-
----
-
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
-
----
+## Markdown Demo
 
 <!-- This content will not appear in the rendered Markdown -->
 <!-- Below are markdown snippits; -->
