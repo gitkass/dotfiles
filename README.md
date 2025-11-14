@@ -4,6 +4,17 @@
  <!-- - [ ] TODO: -->
 
 
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+
+
+curl -fsSL https://tailscale.com/install.sh | sh
+curl -sSf -L https://install.lix.systems/lix | sh -s -- install
+curl -sfL https://direnv.net/install.sh | bash
+
+
 ## Add your files
 
 - [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
