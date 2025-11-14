@@ -1,32 +1,6 @@
 # gitkass/dotfiles/markdown_examples.md
 
-
-# Markdown Snippits
-
-See also [markdown_examples.md](./markdown_examples.md)
-
-
-
-
-See also ![markdown_examples.md](./markdown_examples.md)
-
 <!-- This content will not appear in the rendered Markdown -->
-<!-- Below are markdown snippits; -->
-<!-- This content will not appear in the rendered Markdown -->
-
-# A first-level heading
-## A second-level heading
-### A third-level heading
-
-
-
-<details>
-<summary>My top THINGS-TO-RANK</summary>
-
-YOUR TABLE
-
-</details>
-
 
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
@@ -42,6 +16,22 @@ YOUR TABLE
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+
+# A first-level heading
+## A second-level heading
+### A third-level heading
+
+
+
+<details>
+<summary>My top THINGS-TO-RANK</summary>
+
+YOUR TABLE
+
+</details>
+
+
 
 | Rank | THING-TO-RANK |
 |-----:|---------------|
