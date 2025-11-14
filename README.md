@@ -52,3 +52,8 @@ See also [markdown_examples.md](./markdown_snippits.md)
 
 <details>
 <summary>My top THINGS-TO-RANK</summary>
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
