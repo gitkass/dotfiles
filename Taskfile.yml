@@ -2,12 +2,48 @@ version: '3'
 
 tasks:
   default:
-    summary: Lists all available tasks in this Taskfile.
+    desc: Show available tasks
     cmds:
       - task --list
-    silent: true
+
+  fmt:
+    desc: Format all code
+    cmds:
+      - task: fmt:nix
+      - task: fmt:go
+
+  fmt:nix:
+    desc: Format Nix files
+    cmds:
+      - nix fmt
+    sources:
+      - '**/*.nix'
+      - flake.lock
+
+  fmt:go:
+    desc: Format Go files
+    cmds:
+      - gofumpt -w .
+      - golines -w --max-len=120 --base-formatter=gofumpt .
+    sources:
+      - '**/*.go'
+    preconditions:
+      - sh: command -v gofumpt
+        msg: "gofumpt not found. Run: direnv allow"
+      - sh: command -v golines
+        msg: "golines not found. Run: direnv allow"
+
+  lint:
+    desc: Run all linters
+    cmds:
+      - task: lint:go
+
+  lint:go:
+    desc: Lint Go code
+    cmds:
+      - golangci-lint run ./...
+    sources:
+      - '**/*.go'
+      - .golangci.yml
 
   check:
-    summary: Echoes a placeholder TODO message.
-    cmds:
-      - echo "TODO"
