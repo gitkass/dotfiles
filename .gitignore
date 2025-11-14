@@ -1,2 +1,4 @@
 .direnv
 .task
+# Added by goreleaser init:
+dist/
