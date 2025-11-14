@@ -19,6 +19,8 @@
       devShells = forAllSystems (system:
         let
           pkgs = import nixpkgs { inherit system; };
+                  go = pkgs.go_1_23;
+
         in
         {
           default = pkgs.mkShell {
@@ -27,6 +29,14 @@
               go-task  # https://taskfile.dev/
               git
               goreleaser
+              goreleaser
+              bash
+              neo-cowsay
+ gopls
+          golangci-lint
+          go-tools
+          gotools
+          delve
               bash
             ];
 
