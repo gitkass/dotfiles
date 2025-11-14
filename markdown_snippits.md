@@ -1,37 +1,14 @@
-# gitkass/dotfiles/README.md
-
-This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/reference/commands/init/).
-
-> [!TIP]
-> Quickstart
-
-```
-curl -fsSL https://tailscale.com/install.sh | sh
-curl -sSf -L https://install.lix.systems/lix | sh -s -- install
-curl -sfL https://direnv.net/install.sh | bash
-
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply gitkass
-```
-
-```
-chezmoi --interactive init gitkass
-```
-
----
-
-TODO
-
-- [ ] todo Add delight to the experience when all tasks are complete :tada:
+# gitkass/dotfiles/markdown_examples.md
 
 
-## Markdown Snippits
+# Markdown Snippits
 
-See also [markdown_examples.md](./markdown_snippits.md)
+See also [markdown_examples.md](./markdown_examples.md)
 
 
 
 
-See also ![markdown_examples.md](./markdown_snippits.md)
+See also ![markdown_examples.md](./markdown_examples.md)
 
 <!-- This content will not appear in the rendered Markdown -->
 <!-- Below are markdown snippits; -->
