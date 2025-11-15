@@ -47,3 +47,5 @@ tasks:
       - .golangci.yml
 
   check:
+    cmds:
+      - goreleaser check
