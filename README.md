@@ -7,7 +7,7 @@ This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/refere
 > [!CAUTION]
 > this repo location (`$GITHUB_TRIGGERING_ACTOR/dotfiles`) is a hardcoded external requirement for chezmoi and [helpful for github](https://docs.github.com/en/codespaces/setting-your-user-preferences/personalizing-github-codespaces-for-your-account#dotfiles).
 
-`chezmoi init --apply "${GITHUB_TRIGGERING_ACTOR}`
+<!-- `chezmoi init --apply "${GITHUB_TRIGGERING_ACTOR}` -->
 
 <!-- markdownlint-enable MD013 -->
 > [!TIP]
