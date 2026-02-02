@@ -30,10 +30,12 @@
               bash
               chezmoi #
               delve
+              gh
               git
               go-task  # https://taskfile.dev/
               go-tools
               gofumpt
+              act
               golangci-lint
               golines
               #gopls
@@ -41,6 +43,7 @@
               #gosh
               gotools
               neo-cowsay
+              svu
               nixpkgs-fmt
             ];
             
