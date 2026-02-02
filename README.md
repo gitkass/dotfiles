@@ -50,18 +50,3 @@ See also [markdown_examples.md](./markdown_snippits.md)
 
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
-
-
-
-<!-- This content will not appear in the rendered Markdown -->
-<!-- Below are markdown snippits; -->
-<!-- This content will not appear in the rendered Markdown -->
-
-
-<details>
-<summary>My top THINGS-TO-RANK</summary>
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
