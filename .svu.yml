@@ -1,0 +1,13 @@
+# svu (semantic version utility) config
+# https://github.com/caarlos0/svu
+#
+# Use with: svu next (auto bump from conventional commits), svu patch, svu minor, svu major
+
+# Tag prefix; use "v" for tags like v1.0.0
+prefix: "v"
+
+# Bump at least patch when using "next" (e.g. if no conventional commits found)
+always: true
+
+# Treat v0.x as pre-1.0; allow minor bumps for 0.x
+v0: true
