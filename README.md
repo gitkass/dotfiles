@@ -1,5 +1,8 @@
 # gitkass/dotfiles/README.md
 
+<!-- git@github.com:gitkass/dotfiles.git -->
+<!-- https://github.com/gitkass/dotfiles/blob/main/README.md -->
+
 This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/reference/commands/init/).
 
 <!-- markdownlint-disable MD013 -->
@@ -10,8 +13,8 @@ This repo exists to make it easy to [call chezmoi](https://www.chezmoi.io/refere
 <!-- `chezmoi init --apply "${GITHUB_TRIGGERING_ACTOR}` -->
 
 <!-- markdownlint-enable MD013 -->
-> [!TIP]
-> Quickstart
+
+## Quickstart
 
 ```
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -25,12 +28,22 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply gitkass
 chezmoi --interactive init gitkass
 ```
 
----
 
-TODO
+Or install via nix:
 
-- [ ] todo Add delight to the experience when all tasks are complete :tada:
+```
+nix profile install nixpkgs#chezmoi
+```
 
+## Chezmoi notes
+
+- [chezmoi concepts](https://www.chezmoi.io/reference/concepts/)
+  - The destination directory is the directory that chezmoi manages, usually your home directory, `~`.
+  - A target is a file, directory, or symlink in the destination directory.
+  - The source directory is where chezmoi stores the source state. By default it is `~/.local/share/chezmoi`
+- This repo uses a [.chezmoiroot file](https://www.chezmoi.io/reference/special-files/chezmoiroot/) to store `source` files in the `dotfiles` subdirectory. [more info](https://www.chezmoi.io/user-guide/advanced/customize-your-source-directory/#use-a-subdirectory-of-your-dotfiles-repo-as-the-root-of-the-source-state)
+  - Confirm with `cat ~/.local/share/chezmoi/.chezmoiroot`
+- [quick-start](https://www.chezmoi.io/quick-start/)
 
 ## Markdown Snippits
 

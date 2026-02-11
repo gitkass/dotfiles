@@ -1,0 +1,21 @@
+[user]
+    email = 28125260-gitkass@users.noreply.gitlab.com
+	name = kass
+
+[gitlab]
+    user = gitkass
+
+[github]
+    user = gitkass
+
+[includeIf "gitdir:~/devgl/"]
+	path = ~/.gitconfig.gitlab
+
+[includeIf "gitdir:~/devgh/"]
+	path = ~/.gitconfig.github
+
+[includeIf "gitdir:~/hub/"]
+	path = ~/.gitconfig.github
+
+[push]
+	autoSetupRemote = true
